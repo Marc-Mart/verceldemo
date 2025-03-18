@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcville - Your Online Shopping Destination</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-bold">
+                <a href="#">Marcville</a>
+            </div>
+            <div class="flex-grow mx-4">
+                <input type="text" placeholder="Search Marcville" 
+                       class="w-full p-2 rounded text-black">
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:underline">Hello, Sign In</a>
+                <a href="#" class="hover:underline">Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="relative">
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713" 
+             alt="Marcville Banner" 
+             class="w-full h-96 object-cover">
+        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold bg-black bg-opacity-50">
+            Welcome to Marcville - Shop Everything!
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="container mx-auto py-8 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Product Card 1 -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" 
+                 alt="Headphones" 
+                 class="w-full h-48 object-cover mb-4">
+            <h3 class="text-lg font-semibold">Wireless Headphones</h3>
+            <p class="text-gray-600">$49.99</p>
+            <button class="mt-2 bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500"
+                    onclick="addToCart('Wireless Headphones')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1523275339254-cc1774077256" 
+                 alt="Laptop" 
+                 class="w-full h-48 object-cover mb-4">
+            <h3 class="text-lg font-semibold">Gaming Laptop</h3>
+            <p class="text-gray-600">$999.99</p>
+            <button class="mt-2 bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500"
+                    onclick="addToCart('Gaming Laptop')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1525966222134-fdfa99b89b17" 
+                 alt="Book" 
+                 class="w-full h-48 object-cover mb-4">
+            <h3 class="text-lg font-semibold">Best Seller Book</h3>
+            <p class="text-gray-600">$19.99</p>
+            <button class="mt-2 bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500"
+                    onclick="addToCart('Best Seller Book')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" 
+                 alt="Smartphone" 
+                 class="w-full h-48 object-cover mb-4">
+            <h3 class="text-lg font-semibold">Smartphone</h3>
+            <p class="text-gray-600">$299.99</p>
+            <button class="mt-2 bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500"
+                    onclick="addToCart('Smartphone')">
+                Add to Cart
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Marcville. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">About Us</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function addToCart(productName) {
+            alert(`${productName} has been added to your cart!`);
+        }
+    </script>
+</body>
+</html>
